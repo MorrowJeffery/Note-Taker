@@ -26,7 +26,6 @@ module.exports = function(app) {
         }
         newNote.id = (i);
         newJSON.push(newNote);
-        console.log(newJSON);
 
         fs.writeFile("./db/db.json", JSON.stringify(newJSON), function(err) {
             if (err) {console.log(err);}
