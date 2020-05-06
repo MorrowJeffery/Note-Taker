@@ -9,7 +9,7 @@ app.use(express.static('public'));
 app.use(express.static('db'));
 
 require("./routes/htmlRoutes")(app);
-require("./routes/apiRoutes");
+require("./routes/apiRoutes")(app);
 
 app.listen(PORT, function() {
     console.log("App started on port: " + PORT);
